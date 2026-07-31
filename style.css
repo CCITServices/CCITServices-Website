@@ -1,0 +1,144 @@
+:root {
+    --primary: #005A9C;
+    --dark-blue: #1F3A5F;
+    --secondary: #4B6A88;
+    --accent: #00B7C3;
+    --button: #0F6CBD;
+    --button-hover: #003A6D;
+    --text: #3C3C3C;
+    --light-grey: #F5F5F5;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Aptos, Arial, sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: var(--dark-blue);
+    color: white;
+    padding: 25px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+.hero {
+    background: var(--light-grey);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    color: var(--primary);
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: var(--button);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: var(--button-hover);
+}
+
+section {
+    padding: 70px 0;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 280px;
+    background: white;
+    padding: 25px;
+    border-top: 5px solid var(--primary);
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+.card:hover {
+    border-top-color: var(--accent);
+}
+
+h1, h2, h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+footer {
+    background: var(--dark-blue);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer a {
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    header .container {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
